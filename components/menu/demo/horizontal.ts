@@ -3,6 +3,20 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'nz-demo-menu-horizontal',
   template: `
+    <nz-next-menu class="a" nzMode="horizontal">
+      <nz-next-menu-item *nzNextMenuItem>Navigation 1</nz-next-menu-item>
+      <nz-next-menu-item *nzNextMenuItem>Navigation 2</nz-next-menu-item>
+      <nz-next-menu-item *nzNextMenuItem>Navigation 3</nz-next-menu-item>
+      <nz-next-menu-item *nzNextMenuItem>Navigation 4</nz-next-menu-item>
+      <nz-next-submenu *nzNextMenuItem>
+        <span nz-submenu-title>Navigation 5</span>
+        <nz-next-menu-item *nzNextMenuItem>Navigation 1</nz-next-menu-item>
+        <nz-next-menu-item *nzNextMenuItem>Navigation 2</nz-next-menu-item>
+        <nz-next-menu-item *nzNextMenuItem>Navigation 3</nz-next-menu-item>
+        <nz-next-menu-item *nzNextMenuItem>Navigation 4</nz-next-menu-item>
+      </nz-next-submenu>
+    </nz-next-menu>
+
     <ul nz-menu nzMode="horizontal">
       <li nz-menu-item nzSelected>
         <i nz-icon nzType="mail"></i>

@@ -9,7 +9,7 @@ import { map, startWith, tap } from 'rxjs/operators';
 import { NzResizeObserver } from 'ng-zorro-antd/cdk/resize-observer';
 
 @Directive({
-  selector: '[nzOverflowRest]',
+  selector: '[nzOverflowRestOutlet]',
   host: {
     '[style]': 'restStyle'
   }

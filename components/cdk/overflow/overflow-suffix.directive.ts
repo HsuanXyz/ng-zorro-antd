@@ -9,7 +9,7 @@ import { map, tap } from 'rxjs/operators';
 import { NzResizeObserver } from 'ng-zorro-antd/cdk/resize-observer';
 
 @Directive({
-  selector: '[nzOverflowSuffix]',
+  selector: '[nzOverflowSuffixOutlet]',
   host: {
     '[style]': 'suffixStyle'
   }

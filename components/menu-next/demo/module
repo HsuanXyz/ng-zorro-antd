@@ -1,0 +1,4 @@
+import { NzMenuNextModule } from 'ng-zorro-antd/menu-next';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+
+export const moduleList = [ NzMenuNextModule, NzIconModule ];

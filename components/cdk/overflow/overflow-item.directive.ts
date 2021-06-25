@@ -26,9 +26,9 @@ export class NzOverflowItemDirective {
   );
   itemWidth: number | undefined = undefined;
   constructor(
-    private nzResizeObserver: NzResizeObserver,
-    public elementRef: ElementRef,
-    private cdr: ChangeDetectorRef
+    protected nzResizeObserver: NzResizeObserver,
+    protected elementRef: ElementRef,
+    protected cdr: ChangeDetectorRef
   ) {}
 
   setItemStyle(display: boolean, order: number): void {
